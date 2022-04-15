@@ -1,4 +1,5 @@
 import React from "react";
+import "./search.css";
 
 const Search = ({ videoID, setVideoID, setVideoData }) => {
   const handleChange = (event) => {
@@ -13,16 +14,17 @@ const Search = ({ videoID, setVideoID, setVideoData }) => {
 
     const data = await response.json();
     setVideoData(data);
+    setVideoID("");
   };
 
   return (
-    <div>
+    <div className="searchbar">
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={videoID}
           placeholder="Search by YouTube Video ID"
-          name="video-ID"
+          name="videoID"
           onChange={handleChange}
         />
         <button>Search</button>

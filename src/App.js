@@ -1,7 +1,8 @@
 import { useState } from "react";
+import "./App.css";
 
-import Search from "./components/Search";
-import Video from "./components/Video";
+import Search from "./components/Search/Search";
+import Video from "./components/Video/Video";
 
 function App() {
   const [videoID, setVideoID] = useState("");

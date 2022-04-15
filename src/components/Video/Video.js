@@ -1,4 +1,5 @@
 import React from "react";
+import "./video.css";
 
 const Video = ({ videoData }) => {
   const loaded = () => {
@@ -8,12 +9,12 @@ const Video = ({ videoData }) => {
     const videoId = id;
     const embedVideo = `https://www.youtube.com/embed/${videoId}`;
     return (
-      <div>
+      <div className="yt-player">
         <iframe
           id="ytplayer"
           type="text/html"
           width="720"
-          height="360"
+          height="405"
           src={embedVideo}
           frameborder="0"
         ></iframe>
