@@ -1,11 +1,10 @@
 import React from "react";
 
 const Video = ({ videoData }) => {
-  const { items } = videoData;
-
-  const { id, snippet } = items[0];
-
   const loaded = () => {
+    const { items } = videoData;
+
+    const { id, snippet } = items[0];
     const videoId = id;
     const embedVideo = `https://www.youtube.com/embed/${videoId}`;
     return (
