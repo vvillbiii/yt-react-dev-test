@@ -1,9 +1,20 @@
+form {
+  width: 100%;
+  /* margin: 0 3rem; */
+}
+
 .searchbar input {
-  width: 65%;
-  margin-left: 3rem;
+  width: calc(100% - 8rem);
   font-size: 1rem;
   font-weight: bold;
   padding: 0.4rem;
   color: #737495;
   border: 2px solid #737495;
+}
+
+/* Custom, iPhone Retina */
+@media (min-width: 320px) {
+  .searchbar input {
+    width: calc(100% - 5rem);
+  }
 }

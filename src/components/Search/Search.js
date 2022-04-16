@@ -25,7 +25,7 @@ const Search = ({ videoID, setVideoID, setVideoData }) => {
         <input
           type="text"
           value={videoID}
-          placeholder="Search by YouTube Video ID"
+          placeholder="Search Video ID"
           name="videoID"
           onChange={handleChange}
         />

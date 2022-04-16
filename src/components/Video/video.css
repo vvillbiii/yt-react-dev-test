@@ -6,6 +6,13 @@
   margin: 1.5rem;
 }
 
+.yt-player__content {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
 h3 {
   font-size: 2rem;
   justify-content: center;
@@ -17,4 +24,23 @@ p {
   font-size: 18px;
   line-height: 1.5rem;
   margin: 1.5rem;
+}
+
+/* Custom, iPhone Retina */
+@media (min-width: 320px) {
+  #ytplayer {
+    width: 300px;
+    height: 200px;
+  }
+
+  .yt-player__content {
+    width: 300px;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+  p {
+    width: 80%;
+  }
 }

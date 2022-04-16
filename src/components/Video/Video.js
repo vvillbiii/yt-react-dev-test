@@ -18,7 +18,7 @@ const Video = ({ videoData }) => {
           src={embedVideo}
           frameBorder="0"
         ></iframe>
-        <div>
+        <div className="yt-player__content">
           <h3>{snippet.title}</h3>
           <p>{snippet.description}</p>
         </div>
