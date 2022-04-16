@@ -1,6 +1,8 @@
 import React from "react";
 import "./search.css";
 
+import Button from "../Button/Button";
+
 const Search = ({ videoID, setVideoID, setVideoData }) => {
   const handleChange = (event) => {
     setVideoID(event.target.value);
@@ -27,7 +29,7 @@ const Search = ({ videoID, setVideoID, setVideoData }) => {
           name="videoID"
           onChange={handleChange}
         />
-        <button>Search</button>
+        <Button>Search</Button>
       </form>
     </div>
   );

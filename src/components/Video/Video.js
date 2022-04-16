@@ -16,7 +16,7 @@ const Video = ({ videoData }) => {
           width="720"
           height="405"
           src={embedVideo}
-          frameborder="0"
+          frameBorder="0"
         ></iframe>
         <div>
           <h3>{snippet.title}</h3>

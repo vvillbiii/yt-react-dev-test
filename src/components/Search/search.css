@@ -7,16 +7,3 @@
   color: #737495;
   border: 2px solid #737495;
 }
-
-.searchbar button {
-  font-size: 1rem;
-  font-weight: bold;
-  padding: 0.53rem;
-  background-color: #f17d80;
-  color: white;
-  border: none;
-}
-
-.searchbar button:hover {
-  background-color: #737495;
-}
