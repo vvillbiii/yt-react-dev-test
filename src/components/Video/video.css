@@ -1,46 +1,50 @@
-.yt-player {
+.start {
   display: flex;
   flex-direction: column;
   justify-items: center;
   align-items: center;
-  margin: 1.5rem;
+}
+
+.yt-player-container {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  margin: 1.5rem 0;
+}
+
+iframe {
+  width: 37.5rem;
+  height: 19.75rem;
 }
 
 .yt-player__content {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  align-items: center;
+  max-width: 37.5rem;
+}
+
+.start h2 {
+  font-size: 2rem;
+  margin: 1.5rem 0rem;
+  color: #f17d80;
 }
 
 h3 {
-  font-size: 2rem;
-  justify-content: center;
-  margin: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1.2rem 0rem;
   color: #f17d80;
 }
 
 p {
   font-size: 18px;
   line-height: 1.5rem;
-  margin: 1.5rem;
+  margin: 1.2rem 0rem;
 }
 
-/* Custom, iPhone Retina */
-@media (min-width: 320px) {
-  #ytplayer {
-    width: 300px;
-    height: 200px;
-  }
-
-  .yt-player__content {
-    width: 300px;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-  }
-  p {
-    width: 80%;
+@media screen and (max-width: 480px) {
+  iframe {
+    width: 480px;
+    height: 260px;
   }
 }

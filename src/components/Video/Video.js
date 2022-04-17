@@ -9,15 +9,15 @@ const Video = ({ videoData }) => {
     const videoId = id;
     const embedVideo = `https://www.youtube.com/embed/${videoId}`;
     return (
-      <div className="yt-player">
-        <iframe
-          id="ytplayer"
-          type="text/html"
-          width="720"
-          height="405"
-          src={embedVideo}
-          frameBorder="0"
-        ></iframe>
+      <div className="yt-player-container">
+        <div className="yt-player__video">
+          <iframe
+            id="ytplayer"
+            type="text/html"
+            src={embedVideo}
+            frameBorder="0"
+          ></iframe>
+        </div>
         <div className="yt-player__content">
           <h3>{snippet.title}</h3>
           <p>{snippet.description}</p>
@@ -28,8 +28,8 @@ const Video = ({ videoData }) => {
 
   const loading = () => {
     return (
-      <div>
-        <h1>Search Video</h1>
+      <div className="start">
+        <h2>Search Video</h2>
       </div>
     );
   };

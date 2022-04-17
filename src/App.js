@@ -10,17 +10,15 @@ function App() {
 
   return (
     <div className="App">
-      <h1>YouTube App</h1>
-      <div className="search-bar">
-        <Search
-          videoID={videoID}
-          setVideoID={setVideoID}
-          setVideoData={setVideoData}
-        />
+      <div className="header-container">
+        <h1>YouTube App</h1>
       </div>
-      <div className="video-player">
-        <Video videoData={videoData} />
-      </div>
+      <Search
+        videoID={videoID}
+        setVideoID={setVideoID}
+        setVideoData={setVideoData}
+      />
+      <Video videoData={videoData} />
     </div>
   );
 }

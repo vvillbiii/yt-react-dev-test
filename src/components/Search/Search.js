@@ -20,17 +20,19 @@ const Search = ({ videoID, setVideoID, setVideoData }) => {
   };
 
   return (
-    <div className="searchbar">
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={videoID}
-          placeholder="Search Video ID"
-          name="videoID"
-          onChange={handleChange}
-        />
-        <Button>Search</Button>
-      </form>
+    <div className="search-container">
+      <div className="searchbar">
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={videoID}
+            placeholder="Search Video ID"
+            name="videoID"
+            onChange={handleChange}
+          />
+          <Button>Search</Button>
+        </form>
+      </div>
     </div>
   );
 };
